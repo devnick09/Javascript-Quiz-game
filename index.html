@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Quiz Project</title>
+  </head>
+
+  <body>
+    <header>
+      <a class="leaderboard"
+        >View Highscores <i class="fas fa-hand-point-left fa-lg"> </i
+      ></a>
+      <div class="timer">
+        <p class="timeText">Time :</p>
+        <p class="timeSec">50</p>
+      </div>
+    </header>
+    <main>
+      <!-- Info Section of this Quiz_Game -->
+
+      <section class="info_box">
+        <h2 class="title">Coding Quiz Challenge</h2>
+        <p class="info">
+          Try to answer to following code related questions within the time
+          limit.
+        </p>
+        <p class="info">
+          Keep in mind that incorrect answer will penalize your score/time by
+          ten seconds!
+        </p>
+        <button class="btn_start">Start Quiz</button>
+      </section>
+
+      <!-- Quiz section of this Quiz_Game -->
+      <section class="quiz_box">
+        <div class="question">
+          <!-- <h2>Commonly used data types DO NOT include:</h2> -->
+        </div>
+        <div class="option_list">
+          <!-- <div class="option"><p>1. strings</p></div>
+          <div class="option"><p>2. booleans</p></div>
+          <div class="option"><p>3. alerts</p></div>
+          <div class="option"><p>4. numbers</p></div> -->
+        </div>
+        <footer>
+          <div class="ques_check">
+            <!-- <p class="correct ">Correct!</p>
+            <p class="incorrect ">Incorrect!</p> -->
+          </div>
+          <button class="next_btn">Next</button>
+        </footer>
+      </section>
+      <!-- Score Section of this Quiz_Game -->
+      <section class="score_box">
+        <h2>All Done!</h2>
+        <div class="score"></div>
+        <div class="info">
+          <label for="Name">Enter initials: </label>
+          <form action="" class="form">
+            <input type="text" class="name" required />
+            <button class="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+      <!-- Final score Section -->
+      <section class="view_score">
+        <h2>Highscorers</h2>
+        <ol class="user"></ol>
+        <button class="back">Go Back</button>
+        <button class="clear">Clear Highscores</button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+    <script src="./quiz_brain.js"></script>
+  </body>
+</html>

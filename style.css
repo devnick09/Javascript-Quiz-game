@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #000000;
+}
+header {
+  background: #218380;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  color: #ffffff;
+  height: 10vh;
+}
+
+.leaderboard {
+  cursor: pointer;
+}
+
+.timer {
+  display: flex;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.info_box,
+.quiz_box,
+.score_box,
+.view_score {
+  position: absolute;
+  padding: 3.5rem 2.5rem;
+  border: 2px solid #aaaaaa96;
+  width: 40%;
+  margin: 2rem auto;
+  border-radius: 1.5rem;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: all;
+}
+.info {
+  margin: 1rem 0;
+}
+
+.score_box,
+.view_score {
+  width: 25%;
+}
+
+.score {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.option_list {
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid grey;
+}
+
+.option {
+  margin: 0.5rem 0;
+  display: block;
+  background-color: #218380;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.question {
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 0.7rem 0.6rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #218380;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+}
+.next_btn,
+.submit {
+  width: 5rem;
+  height: 2.5rem;
+}
+
+input {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid black;
+  outline: none;
+}
+.user {
+  padding: 1rem 2rem;
+}
+.decoration {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 360px) {
+  .info_box {
+    width: 75%;
+    padding: 2rem 1rem;
+    height: max-content;
+    font-size: small;
+  }
+  .quiz_box {
+    width: 75%;
+    padding: 2rem 1rem;
+    height: max-content;
+    font-size: small;
+  }
+
+  .score_box {
+    width: 50%;
+    height: max-content;
+    padding: 1.5rem 2rem;
+    text-align: center;
+  }
+  .info input {
+    margin: 1rem 0;
+  }
+  .view_score {
+    width: 50%;
+    height: max-content;
+    padding: 2rem 2.5rem;
+  }
+  .view_score button {
+    text-align: end;
+    padding: 0.4rem 0.3rem;
+    border-radius: 0.3rem;
+  }
+}
